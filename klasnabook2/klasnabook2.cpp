@@ -9,9 +9,9 @@ private:
     int year;
     int numberPages;
 public:
-    //експлісіт конструктор ( у мене інших немає )
+    //ГҐГЄГ±ГЇГ«ВіГ±ВіГІ ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ( Гі Г¬ГҐГ­ГҐ ВіГ­ГёГЁГµ Г­ГҐГ¬Г Вє )
     explicit Book(const char* a, const char* n, const char* pH, int y, int nP) : author(a), name(n), publishingHouse(pH), year(y), numberPages(nP) {}
-    //геттери
+    //ГЈГҐГІГІГҐГ°ГЁ
     const char* getauthor() {
         return author;
     }
@@ -27,7 +27,7 @@ public:
     int getnumberPages() {
         return numberPages;
     }
-    //сеттери
+    //Г±ГҐГІГІГҐГ°ГЁ
     void setauthor(const char* a) {
         author = a;
     }
@@ -43,7 +43,7 @@ public:
     void setnumberPages(int nM) {
         numberPages = nM;
     }
-    //вивід усього
+    //ГўГЁГўВіГ¤ ГіГ±ГјГ®ГЈГ®
     void printall() {
         cout << "Author: " << author << " |Name: " << name << " |Publishing House: " << publishingHouse << " |Year: " << year << " |Number of Pages: " << numberPages << endl;
     }
@@ -87,10 +87,6 @@ int main() {
         Book("Gabe", "20 and 12", "House Of Sheesh", 2012, 212)
     };
 
-    // printBook({"Author", "Name", "House", 2024, 300}); //Помилка: неявне створення заборонене
-    //Book book1("Author", "Name", "House", 2024, 300); //Явний виклик
-    //book1.setauthor("lol");
-    //book1.printall();
     sortByAuthor(books, "Tyler");
     sortByHouse(books, "House Of Sheesh");
     sortByYear(books, 2012);
